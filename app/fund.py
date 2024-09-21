@@ -6,7 +6,7 @@ from .config import RAPIDAPI_KEY, RAPIDAPI_HOST, RAPIDAPI_URL
 router = APIRouter()
 
 @router.get("/fund-families")
-async def get_fund_families():
+async def get_fund_families(token: str = Depends(get_current_user)):
     headers = {
         'x-rapidapi-key': RAPIDAPI_KEY,
         'x-rapidapi-host': RAPIDAPI_HOST,
