@@ -14,6 +14,7 @@ RAPIDAPI_URL = os.getenv('RAPIDAPI_URL')
 
 # Add CORS origins
 origins = [
-    "http://localhost:3000",
-    "http://localhost:8000"
+    "http://localhost:3001",
+    "http://localhost:8000",
+    "https://rishabh6398.github.io"
 ]
